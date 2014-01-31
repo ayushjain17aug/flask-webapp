@@ -1,0 +1,231 @@
+/* Remove margin, padding and border from everything
+-----------------------------------------------------------------------------*/
+
+* { margin: 0; padding: 0; border: 0; }
+html { font-family: "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif; }
+
+/* Styles for layout
+-----------------------------------------------------------------------------*/
+
+.clear { clear:both; }
+.right { float: right; }
+.left { float: left; }
+
+/* Set up the document
+-----------------------------------------------------------------------------*/
+
+body {
+    font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;
+    background: url(/static/img/bg.gif) repeat;
+    color: #000000; 
+    text-align:center;
+    margin: 0;
+}
+
+
+/* Typography
+-----------------------------------------------------------------------------*/
+
+h1 { font-size: 2.2em; /* Equivalent to 22pt */ }
+h2 { font-size: 2.0em; /* Equivalent to 20pt */ }
+h3 { font-size: 1.8em; /* Equivalent to 18pt */ }
+h4 { font-size: 1.6em; /* Equivalent to 18pt */ }
+h5 { font-size: 1.4em; /* Equivalent to 14pt */ }
+p, q, cite { font-size: 1.2em; /* Equivalent to 12pt */ }
+ul, ol, dl { list-style: none; font-size: 1.2em; /* Equivalent to 12pt */ }
+li, dd, dt { font-size: 1.2em; /* Equivalent to 12pt */   }
+
+
+input.text { padding: 3px; border: 1px solid #999999; }
+
+table {  border-spacing: 0; border-collapse: collapse; }
+td { text-align: left; font-weight: normal; }
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+
+    height: 50px;
+    width: 100%;
+
+    background-color: #000;
+    color: #fff;
+    /* opacity */
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+#header .title {
+    font-family: 'Audiowide', cursive;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: 28px;
+}
+#header #search {
+    padding: 8px 12px 8px 30px;
+    margin: 9px 0 0 30px;
+    background: url(/static/img/search-icon.png) no-repeat 6px center;
+    background-color: #eee;
+    width: 250px;
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#header #search:focus {
+    background-color: #fff;
+    border: none;
+}
+
+
+/* Navigation
+-----------------------------------------------------------------------------*/
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+
+
+/* Homepage
+-----------------------------------------------------------------------------*/
+#container {
+    margin-top: 70px;
+}
+
+
+/* Your template
+-----------------------------------------------------------------------------*/
+
+
+/* Other
+-----------------------------------------------------------------------------*/
+
+/** General page styling **/
+
+#main {
+  position: relative;
+  padding: 0 50px;
+}
+
+
+/**
+ * Grid container
+ */
+#tiles {
+  list-style-type: none;
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Grid items
+ */
+#tiles li {
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: none; /** Hide items initially to avoid a flicker effect **/
+  cursor: pointer;
+  padding: 4px;
+}
+
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tiles li img {
+  display: block;
+}
+
+/**
+ * Grid item text
+ */
+#tiles li p {
+  color: #666;
+  font-size: 13px;
+line-height: 20px;
+text-align: center;
+font-weight: 200;
+  margin: 7px 0 2px 7px;
+}
+
+/**
+ * Progress bar for imagesLoaded
+ */
+.progress-bar {
+  background-color: #0BC20B;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  box-shadow: 0 1px 3px rgba(11, 194, 11, 0.2);
+  -webkit-transition: width 0.3s ease-out;
+     -moz-transition: width 0.3s ease-out;
+       -o-transition: width 0.3s ease-out;
+          transition: width 0.3s ease-out;
+}
+
+/**
+ * Placerholder css
+ */
+.wookmark-placeholder {
+          border-radius: 2px;
+     -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  z-index: -1;
+}
+
+.example-tiles {
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0;
+}
+
+.example-tiles li {
+  display: block;
+  list-style-type: none;
+  float: left;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+
+.example-tiles a,
+.example-tiles a:hover {
+  color: #555;
+  background-color: #eee;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.example-tiles a:hover {
+  background-color: #ddd;
+}
