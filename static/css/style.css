@@ -53,11 +53,17 @@ td { text-align: left; font-weight: normal; }
 
     background-color: #000;
     color: #fff;
+
     /* opacity */
     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
     -moz-opacity: 0.9;
     -khtml-opacity: 0.9;
     opacity: 0.9;
+
+    /* shadow */
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
 }
 #header .title {
     font-family: 'Audiowide', cursive;
@@ -66,7 +72,7 @@ td { text-align: left; font-weight: normal; }
     font-size: 28px;
 }
 #header #search {
-    padding: 8px 12px 8px 30px;
+    padding: 8px 12px 8px 34px;
     margin: 9px 0 0 30px;
     background: url(/static/img/search-icon.png) no-repeat 6px center;
     background-color: #eee;
@@ -80,6 +86,11 @@ td { text-align: left; font-weight: normal; }
 #header #search:focus {
     background-color: #fff;
     border: none;
+}
+
+#header #help {
+    line-height: 50px;
+    margin-left: 20px;
 }
 
 
@@ -96,9 +107,16 @@ td { text-align: left; font-weight: normal; }
 /* Homepage
 -----------------------------------------------------------------------------*/
 #container {
-    margin-top: 70px;
+    margin-top: 50px;
+    padding-top: 20px;
 }
 
+#loading {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    background: url(/static/img/loading.gif) center center no-repeat;
+}
 
 /* Your template
 -----------------------------------------------------------------------------*/
