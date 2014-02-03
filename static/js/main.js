@@ -96,10 +96,6 @@ $(document).ready(function () {
             closeToBottom = ($window.scrollTop() + winHeight > $document.height() - 100);
 
         if (closeToBottom) {
-            // Get the first then items from the grid, clone them, and add them to the bottom of the grid
-            // var $items = $('li', $tiles),
-            //     $firstTen = $items.slice(0, 10);
-            // $tiles.append($firstTen.clone());
             feed.run();
             applyLayout();
             tumblrPhotos()
@@ -112,8 +108,8 @@ $(document).ready(function () {
     }).click(function () {
         $('#search')[0].select();
     }).keydown(function (e) {
-        if (e.keyCode !== 8 && (e.keyCode < 65 || e.keyCode > 90)) {
-            return false
+        if (e.keyCode !== 8 && e.keyCode != 13 && (e.keyCode < 65 || e.keyCode > 90)) {
+            return false;
         }
     });
 
