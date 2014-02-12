@@ -110,7 +110,15 @@ $ sudo supervisorctl reload
 4) Open you site in browser
 
 Check tests
-===========
+-----------
+
+Before test application install test libraries
+
+```
+$ pip install -r test/test_requirements.txt 
+```
+
+And run all unittests
 
 ```
 $ python run.py test
