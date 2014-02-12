@@ -108,3 +108,12 @@ $ sudo supervisorctl reload
 ```
 
 4) Open you site in browser
+
+Check tests
+===========
+
+```
+$ ./runtests
+```
+
+Note: Before run test change keys in config/settings.py

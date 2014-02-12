@@ -1,0 +1,4 @@
+python-tumblpy==1.0.2
+python-instagram==0.8.0
+
+
