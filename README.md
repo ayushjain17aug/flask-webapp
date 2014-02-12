@@ -113,7 +113,7 @@ Check tests
 ===========
 
 ```
-$ ./runtests
+$ python run.py test
 ```
 
 Note: Before run test change keys in config/settings.py
