@@ -40,7 +40,7 @@ class ApiConnectiondTestCase(unittest.TestCase):
         """ Get posts from tumblr and check photos in posts """
 
         tumblr = tumblr_connect()
-        auth_token = tumblr.get_authentication_tokens()
+        tumblr.get_authentication_tokens()
         posts = tumblr.get('tagged', params={'limit': TEST_DATA_LIMIT,
                                              'tag': BASE_TAG})
 
@@ -56,7 +56,7 @@ class ApiConnectiondTestCase(unittest.TestCase):
         """ Test authentication on Instagram """
 
         # Get crash if something wrong
-        instagram = instagram_connection()
+        instagram_connection()
 
 
     def test_get_instagram_photos(self):
