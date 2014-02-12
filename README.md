@@ -88,7 +88,7 @@ Configaration
 
 ```
 [program:myproject]
-command=/home/superuser/watchit/.env/bin/gunicorn run:app --bind <ipaddr>:80 --workers=3 --log-file /home/superuser/watchit/logs/gunicorn.log
+command=/home/superuser/watchit/.env/bin/gunicorn run:app --bind localhost:12345 --workers=3 --log-file /home/superuser/watchit/logs/gunicorn.log
 directory=/home/superuser/watchit
 umask=022
 autostart=true
